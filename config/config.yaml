@@ -144,9 +144,6 @@ rss:
       url: "https://finance.yahoo.com/news/rssindex"
       enabled: false                  # 禁用
 
-    - id: "we-rss"
-      name: "微信公众号"
-      url: "https://we-rss123.zeabur.app/feeds/MP_WXS_3635539788.atom"
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -239,7 +236,7 @@ display:
   # 两者共享此处的平台/RSS 配置，但开关互相独立（可只开 AI 分析、不推送展示）
   standalone:
     platforms: []     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: ["we-rss"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 10                     # 每个源最多展示条数（0=不限制）
 
 
